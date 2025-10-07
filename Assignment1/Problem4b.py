@@ -1,10 +1,10 @@
 import random
 
-# Simulation parameters
+# Simulatation of rolling a die 1000 times
 trials = 1000
 wins = 0
 
-for _ in range(trials):
+for i in range(trials):
     prev_roll = None
     while True:
         roll = random.randint(1, 6)
@@ -18,8 +18,8 @@ for _ in range(trials):
         else:
             prev_roll = roll
 
-# Empirical probability (relative frequency)
+# Empirical probability
 empirical_probability = wins / trials
 
 print(f"Number of wins in {trials} trials: {wins}")
-print(f"Empirical probability (relative frequency): {empirical_probability:.4f}")
+print(f"Empirical probability: {empirical_probability:.4f}")
