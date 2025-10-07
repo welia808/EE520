@@ -21,5 +21,5 @@ for i in range(trials):
 # Empirical probability
 empirical_probability = wins / trials
 
-print(f"Number of wins in {trials} trials: {wins}")
+print(f"Wins in {trials} trials: {wins}")
 print(f"Empirical probability: {empirical_probability:.4f}")
